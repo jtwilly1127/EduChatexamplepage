@@ -1,0 +1,2 @@
+# EduChatexamplepage
+Example forum
