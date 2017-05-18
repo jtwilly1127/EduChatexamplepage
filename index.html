@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title> Fav Movies! </title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href = "css/custom.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+	</head>
+
+<body>	
+<section id="contact">
+			<div class="section-content">
+				<h1 class="section-header"> Tell us your <span class="content-header wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s"> Favorite Movies</span></h1>
+				<h3>Our high funtioning algorithm will ensure your best movie selectioin experience.</h3>
+			</div>
+			<div class="contact-section">
+				<div class="container">
+					<script>
+						if (typeof(Storage) !== "undefined"){
+							
+						}
+						
+						else{
+							document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+						}
+					</script>
+					<form>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputMovieTitle"> Movie Title </label>
+								<input type="text" name="Movie Title " class="form-control" id="movie" placeholder=" Enter Movie">
+							</div>
+							<div class="form-group">
+								<label for="inputEmail">Year of Release</label>
+								<input type="text" class="form-control" id="YOR" placeholder=" Enter Year of Release">
+							</div>	
+							<div class="form-group">
+								<label for="inputDirector">Director</label>
+								<input type="text" class="form-control" id="director" placeholder=" Enter director">
+							</div>
+							<div class="form-group">
+								<label for="inputUrl">URL</label>
+								<input type="text" class="form-control" id="URL" placeholder=" Enter URL">
+							</div>
+							<div>
+
+								<button type="button" class="btn btn-default submit" onclick=newMovie() ><i class="fa fa-paper-plane" aria-hidden="true"></i>  Submit</button>
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="form-group">
+								<span><img src="img/movies.png"></span>
+							</div>
+						
+						</div>
+					</form>
+				</div>
+			</div>	
+		</section>
+	</body>
+</html>
+
